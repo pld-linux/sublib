@@ -7,7 +7,8 @@ License:	GPL
 Group:		Libraries
 Source0:	http://dl.sourceforge.net/sublib/%{name}-%{version}.zip
 # Source0-md5:	8d09e2785b4a6fa62fba71e4169a51fe
-#Patch0:		%{name}-what.patch
+Source1:	http://dl.sourceforge.net/sublib/%{name}-docs-%{version}.zip
+# Source1-md5:	96a0e1e7f9ad71c9e97816725663a9c8
 URL:		http://sublib.sourceforge.net/
 BuildRequires:	mono-csharp
 BuildRequires:	rpmbuild(monoautodeps)
@@ -32,7 +33,7 @@ Header files for SubLib library.
 Pliki nagłówkowe biblioteki SubLib.
 
 %prep
-%setup -q
+%setup -q -a1
 
 %build
 %configure
@@ -55,4 +56,5 @@ rm -rf $RPM_BUILD_ROOT
 
 %files devel
 %defattr(644,root,root,755)
+%doc %{name}-docs-%{version}/docs/*
 %{_pkgconfigdir}/*.pc
