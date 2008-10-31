@@ -1,8 +1,11 @@
+#
+%include	/usr/lib/rpm/macros.mono
+#
 Summary:	SubLib is a library for managing movie subtitles
 Summary(pl.UTF-8):	SubLib to biblioteka do obsługi napisów do filmów
 Name:		sublib
 Version:	0.9
-Release:	1
+Release:	2
 License:	GPL
 Group:		Libraries
 Source0:	http://dl.sourceforge.net/sublib/%{name}-%{version}.zip
