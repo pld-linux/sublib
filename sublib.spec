@@ -15,6 +15,7 @@ Source1:	http://dl.sourceforge.net/sublib/%{name}-docs-%{version}.zip
 URL:		http://sublib.sourceforge.net/
 BuildRequires:	mono-csharp
 BuildRequires:	rpmbuild(monoautodeps)
+BuildRequires:	unzip
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
