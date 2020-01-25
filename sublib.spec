@@ -1,5 +1,4 @@
 #
-%include	/usr/lib/rpm/macros.mono
 #
 Summary:	SubLib is a library for managing movie subtitles
 Summary(pl.UTF-8):	SubLib to biblioteka do obsługi napisów do filmów
